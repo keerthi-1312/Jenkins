@@ -10,6 +10,7 @@ pipeline{
             steps{
                 echo "building pipeline from main"
 		echo "execute from main"
+		sh "ls -la"
 	    }	
         }
 	stage('test'){
