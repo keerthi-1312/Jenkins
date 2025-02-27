@@ -3,30 +3,19 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                echo "checkout"
+                echo "checkout from main"
             }
         }
         stage('build'){
             steps{
-                echo "building pipeline stage"
-				echo "execute"
-			}	
-            	
+                echo "building pipeline from main"
+		echo "execute from main"
+	    }	
         }
-		stage('test'){
-			steps{
-				echo "testing pipeline"
-			}
-		}
-		stage('approval'){
-			steps{
-				echo "approval needed"
-			}
-		}	
-		stage('deploy'){
-			steps{
-				echo "deploy"
-			}
-		}	
+	stage('test'){
+	     steps{
+		echo "testing pipeline from main"
+	     }
+	}
     }
 }
